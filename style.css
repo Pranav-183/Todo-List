@@ -132,3 +132,34 @@ select {
     background: white;
     color: #ff6f47;
 }
+
+.contextMenu {
+    position: absolute;
+    list-style: none;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #282828;
+    display: none;
+    z-index: 10;
+}
+
+.contextMenu.show {
+    display: block;
+}
+
+.contextItem {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in;
+    width: 100%;
+    cursor: default;
+}
+
+.contextItem:hover {
+    background: #444;
+}
